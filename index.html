@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ce954a986c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
         <div id="sidebar">
+            <div id="sidebar-head">
+                <i class="fa-solid fa-table-columns fa-3x" style="color: white;"></i>
+                <h2 id="dashboard">Dashboard</h2>
+            </div>
+            <div id="sidebar-top">
+                <i class="fa-solid fa-house icons fa-2x"></i>
+                <h3>Home</h3>
+                <i class="fa-solid fa-address-card icons fa-2x"></i>
+                <h3>Profile</h3>
+                <i class="fa-solid fa-message icons fa-2x"></i>
+                <h3>Messages</h3>
+                <i class="fa-solid fa-clock icons fa-2x"></i>
+                <h3>History</h3>
+                <i class="fa-solid fa-copy icons fa-2x"></i>
+                <h3>Tasks</h3>
+                <i class="fa-solid fa-people-group icons fa-2x"></i>
+                <h3>Communities</h3>
+            </div>
 
-        </div>
+            <div id="sidebar-bottom">
+                <i class="fa-solid fa-gear icons fa-2x"></i>
+                <h3>Settings</h3>
+                <i class="fa-solid fa-circle-question icons fa-2x"></i>
+                <h3>Support</h3>
+                <i class="fa-solid fa-shield-heart icons fa-2x"></i>
+                <h3>Privacy</h3>
+            </div>
+         </div>
         <div id="header">
             <span></span>
             <span></span>
@@ -22,5 +49,9 @@
     
         </div>
     </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
