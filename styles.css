@@ -1,6 +1,9 @@
 body{
     margin: 0;
     background-color: #EEEEEE;
+    padding: 0;
+    overflow-y: auto;
+    height: 100%;
 }
 #container{
     display: inline-grid;
@@ -110,7 +113,7 @@ body{
     border-radius: 100%;
 }
 
-#cat-img2{
+#cat-img2, .users img{
     height: 50px;
     width: 50px;
     border-radius: 100%;
@@ -168,18 +171,22 @@ body{
 #main-content-headers{
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
+    gap: 20px;
 }
 
 #main-grid-container{
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
+    gap: 20px;
 }
 
 #projects{
     display: grid;
-    grid-template-columns: 550px auto;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 250px 250px 250px;
     gap: 50px;
-    width: 1150px;
+    width: 1050px;
+    margin-bottom: 20px;
 }
 
 .project{
@@ -191,7 +198,6 @@ body{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
@@ -214,16 +220,17 @@ body{
 
 #right-side{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
 }
 
 .main-right-side-boxes{
-    width: 300px;
+    width: 250px;
     background-color: white;
     padding: 40px 40px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 2;
+    margin-right: 10px;
 }
 
 .main-right-side-boxes p{
@@ -236,8 +243,22 @@ body{
     margin: 0;
 }
 
-#announcements{
+.users{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    margin-bottom: 20px;
+}
+
+.users span h6{
+    margin: 0;
+    font-size: 15px;
+}
+
+.users span p{
+    color: gray;
+    margin: 0;
 }
 
 #trending{
+    margin-top: 30px
 }
